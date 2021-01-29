@@ -1634,7 +1634,7 @@ const char *D_Home(void)
 			usehome = false; // Let's NOT use home
 		else
 #endif
-			userhome = I_GetEnv("HOME"); //Alam: my new HOME for srb2
+			userhome = I_GetEnv("PWD"); //Alam: my new HOME for srb2
 	}
 #if defined (_WIN32) && !defined(_WIN32_WCE) //Alam: only Win32 have APPDATA and USERPROFILE
 	if (!userhome && usehome) //Alam: Still not?
